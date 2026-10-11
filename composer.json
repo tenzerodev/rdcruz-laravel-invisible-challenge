@@ -1,0 +1,23 @@
+{
+    "name": "tenzerodev/rdcruz-laravel-invisible-challenge",
+    "description": "An invisible, self-hosted captcha for Laravel: a small proof-of-work puzzle the browser solves in the background, plus a time check. No third-party scripts, no tracking, nothing to click.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel", "captcha", "spam", "proof-of-work", "privacy", "honeypot", "form"],
+    "require": {
+        "php": "^8.3",
+        "illuminate/support": "^11.0|^12.0|^13.0",
+        "illuminate/http": "^11.0|^12.0|^13.0",
+        "illuminate/validation": "^11.0|^12.0|^13.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0|^10.0|^11.0",
+        "phpunit/phpunit": "^11.0|^12.0"
+    },
+    "autoload": { "psr-4": { "Rdcruz\\InvisibleChallenge\\": "src/" } },
+    "autoload-dev": { "psr-4": { "Rdcruz\\InvisibleChallenge\\Tests\\": "tests/" } },
+    "extra": { "laravel": { "providers": ["Rdcruz\\InvisibleChallenge\\InvisibleChallengeServiceProvider"] } },
+    "scripts": { "test": "phpunit" },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
